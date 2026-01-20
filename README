@@ -16,7 +16,6 @@ credit_card_fraud_detection/
 ├── train.py                      # Model training script
 ├── logistic_regression_model.pkl # Trained ML model
 ├── scaler.pkl                    # Feature scaler
-└── README.md                     # Project documentation
 
 Features Used
 - Transaction Amount
