@@ -1,0 +1,75 @@
+CREDIT CARD FRAUD DETECTION USING MACHINE LEARNING
+
+This project implements a machine learning–based system to detect fraudulent credit card transactions using historical transaction data. A Logistic Regression model is trained with imbalance handling techniques and deployed using a Streamlit web application for real-time prediction.
+
+Features
+- Binary classification: Fraud vs Non-Fraud
+- Handles highly imbalanced data using SMOTE
+- Feature scaling using StandardScaler
+- Logistic Regression–based classification
+- Streamlit web interface for user interaction
+- Trained model and scaler saved using Pickle
+
+Project Structure
+credit_card_fraud_detection/
+├── app.py                        # Streamlit application
+├── train.py                      # Model training script
+├── dataset.csv                   # Transaction dataset (optional / large file)
+├── logistic_regression_model.pkl # Trained ML model
+├── scaler.pkl                    # Feature scaler
+└── README.md                     # Project documentation
+
+Features Used
+- Transaction Amount
+- Latitude & Longitude
+- Merchant Latitude & Longitude
+- Transaction Hour
+- Transaction Day
+- Transaction Month
+- Gender
+
+Requirements
+- Python 3.10+
+- numpy
+- pandas
+- scikit-learn
+- imbalanced-learn
+- streamlit
+
+How to Run
+1. Clone the repository
+2. Create and activate a virtual environment
+3. Install dependencies
+4. Train the model
+5. Run the Streamlit application
+
+Training the Model
+Run the following command:
+python train.py
+
+This will generate:
+- logistic_regression_model.pkl
+- scaler.pkl
+
+Running the Application
+Run the following command:
+streamlit run app.py
+
+Enter transaction details in the UI and click **Check For Fraud** to get predictions.
+
+Results
+- Logistic Regression achieves good performance after applying SMOTE
+- Model effectively detects fraudulent transactions
+- Suitable for real-time fraud detection use cases
+
+Future Work
+- Implement advanced models (Random Forest, XGBoost)
+- Add transaction visualization and analytics
+- Deploy the application to cloud platforms
+- Improve feature engineering and accuracy
+
+Author
+Shifana N  
+B.Tech Computer Science Engineering  
+
+GitHub: https://github.com/Shifana4303
