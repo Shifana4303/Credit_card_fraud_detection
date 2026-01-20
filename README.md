@@ -70,6 +70,4 @@ Future Work
 
 Author
 Shifana N  
-B.Tech Computer Science Engineering  
-
 GitHub: https://github.com/Shifana4303
